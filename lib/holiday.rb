@@ -63,7 +63,7 @@ def all_supplies_in_holidays(holiday_hash)
       capital_holiday_string_array = holiday_string_array.collect {|element| element.capitalize!}
       holiday_string = capital_holiday_string_array.join
       output_holiday_string = "#{  holiday_string}: "
-      output_supply = supply_array_value.join(,)
+      output_supply = supply_array_value.join(",")
       puts output_holiday_string + output_supply
     end
   end
