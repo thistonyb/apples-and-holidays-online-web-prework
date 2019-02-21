@@ -45,6 +45,7 @@ end
 
 def all_winter_holiday_supplies(holiday_hash)
   # return an array of all of the supplies that are used in the winter season
+  supplies = nil
   holiday_hash[:winter].collect {|key, value| supplies}
 end
 
