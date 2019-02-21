@@ -63,12 +63,10 @@ def all_supplies_in_holidays(holiday_hash)
       capital_holiday_string_array = holiday_string_array.collect {|element| element.capitalize!}
       holiday_string = capital_holiday_string_array.join
       output_holiday_string = "#{  holiday_string}: "
-      supply_array_value.each do |element|
-        output_supply = element.join(,)
-      end
+      output_supply = supply_array_value.join(,)
+      puts output_holiday_string + output_supply
     end
   end
-  puts output_season_key/n + output_holiday_string
 end
 
 def all_holidays_with_bbq(holiday_hash)
