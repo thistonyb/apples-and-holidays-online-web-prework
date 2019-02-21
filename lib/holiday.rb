@@ -66,7 +66,7 @@ def all_supplies_in_holidays(holiday_hash)
       supply_array_value.each do |element|
         if element == supply_array_value.last
           supply += "#{element}"
-        els
+        else
           supply += "#{element}, "
         end
         puts "output_season_key/n" + "output_holiday_string"
