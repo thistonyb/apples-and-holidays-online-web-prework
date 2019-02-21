@@ -65,7 +65,7 @@ def all_supplies_in_holidays(holiday_hash)
       holiday_string = capital_holiday_string_array.join
       output_holiday_string = "#{  holiday_string}: "
       output_supply = supply_array_value.join(", ")
-      puts "  #{output_holiday_string + output_supply}
+      puts "  #{output_holiday_string + output_supply}"
     end
   end
 end
