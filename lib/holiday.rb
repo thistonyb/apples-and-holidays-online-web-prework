@@ -60,8 +60,8 @@ def all_supplies_in_holidays(holiday_hash)
     puts "#{season_key.capitalize}:"
     holiday_hash_value.each do |holiday_key, supply_array_value|
       holiday_string_array = holiday_key.to_s.split
-      holiday_string_array = holiday_string_array.collect {|element| element.capitalize!}
-      holiday_string = holiday_string_array.join
+      capital_holiday_string_array = holiday_string_array.collect {|element| element.capitalize!}
+      holiday_string = capital_holiday_string_array.join
       print "#{  holiday_string}: "
       supply_array_value.each do |element|
         if element == supply_array_value.last
