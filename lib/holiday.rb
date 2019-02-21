@@ -64,15 +64,11 @@ def all_supplies_in_holidays(holiday_hash)
       holiday_string = capital_holiday_string_array.join
       output_holiday_string = "#{  holiday_string}: "
       supply_array_value.each do |element|
-        if element == supply_array_value.last
-          supply += "#{element}"
-        else
-          supply += "#{element}, "
-        end
-        puts "output_season_key/n" + "output_holiday_string"
+        output_supply = element.join(,)
       end
     end
   end
+  puts output_season_key/n + output_holiday_string
 end
 
 def all_holidays_with_bbq(holiday_hash)
