@@ -64,11 +64,13 @@ def all_supplies_in_holidays(holiday_hash)
       holiday_string = capital_holiday_string_array.join
       print "#{  holiday_string}: "
       supply_array_value.each do |element|
+        supply = nil
         if element == supply_array_value.last
-          puts "#{element}"
+          supply += "#{element}"
         else
-          print "#{element}, "
+          supply += "#{element}, "
         end
+        puts supply
       end
     end
   end
